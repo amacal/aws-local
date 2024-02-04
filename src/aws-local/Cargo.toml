@@ -1,0 +1,22 @@
+[package]
+name = "aws-local"
+version = "0.1.0"
+edition = "2021"
+authors = ["Adrian Macal <adma@amacal.pl>"]
+license = "MIT"
+description = "A HTTP Server proxying to local AWS Lambda Runtime"
+repository = "https://github.com/amacal/aws-local"
+
+[dependencies]
+aws_lambda_events = { version = "0.13.1", default-features = false, features = ["apigw"] }
+axum = { version = "0.7.4", default-features = false, features = ["tokio", "ws", "original-uri", "query", "http1", "json"] }
+base64 = { version = "0.21.7", default-features = false, features = [] }
+bytes = { version = "1.5.0", default-features = false, features = [] }
+chrono = { version = "0.4.33", default-features = false, features = ["now"] }
+clap = { version = "4.4.18", default-features = false, features = ["std", "derive"] }
+http = { version = "1.0.0", default-features = false, features = [] }
+log = { version = "0.4.20", default-features = false, features = ["std"] }
+reqwest = { version = "0.11.24", default-features = false, features = ["json"] }
+serde = { version = "1.0.196", default-features = false, features = ["derive", "serde_derive"] }
+thiserror = { version = "1.0.56", default-features = false, features = [] }
+tokio = { version = "1.36.0", default-features = false, features = [] }
