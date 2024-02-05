@@ -1,9 +1,10 @@
 [package]
 name = "aws-local"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Adrian Macal <adma@amacal.pl>"]
 license = "MIT"
+readme = "../../README.md"
 description = "A HTTP Server proxying to local AWS Lambda Runtime"
 repository = "https://github.com/amacal/aws-local"
 
